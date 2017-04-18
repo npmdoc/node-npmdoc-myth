@@ -1,0 +1,509 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/segmentio/myth"
+
+    >myth (v1.5.0)</a>
+</h1>
+<h4>A CSS preprocessor that acts like a polyfill for future versions of the spec.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.myth">module myth</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.myth.myth">
+            function <span class="apidocSignatureSpan"></span>myth
+            <span class="apidocSignatureSpan">(string, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.myth.toString">
+            function <span class="apidocSignatureSpan">myth.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">myth.</span>features</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.myth.features">module myth.features</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.myth.features.calc">
+            function <span class="apidocSignatureSpan">myth.features.</span>calc
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.myth.features.color">
+            function <span class="apidocSignatureSpan">myth.features.</span>color
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.myth.features.customMedia">
+            function <span class="apidocSignatureSpan">myth.features.</span>customMedia
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.myth.features.fontVariant">
+            function <span class="apidocSignatureSpan">myth.features.</span>fontVariant
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.myth.features.hexAlpha">
+            function <span class="apidocSignatureSpan">myth.features.</span>hexAlpha
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.myth.features.import">
+            function <span class="apidocSignatureSpan">myth.features.</span>import
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.myth.features.prefixes">
+            function <span class="apidocSignatureSpan">myth.features.</span>prefixes
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.myth.features.rebeccapurple">
+            function <span class="apidocSignatureSpan">myth.features.</span>rebeccapurple
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.myth.features.variables">
+            function <span class="apidocSignatureSpan">myth.features.</span>variables
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.myth.myth">module myth.myth</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.myth.myth.myth">
+            function <span class="apidocSignatureSpan">myth.</span>myth
+            <span class="apidocSignatureSpan">(string, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">myth.myth.</span>features</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.myth.toString">module myth.toString</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.myth.toString.toString">
+            function <span class="apidocSignatureSpan">myth.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.myth" id="apidoc.module.myth">module myth</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.myth.myth" id="apidoc.element.myth.myth">
+        function <span class="apidocSignatureSpan"></span>myth
+        <span class="apidocSignatureSpan">(string, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function myth(string, options){
+  if (&#x27;object&#x27; == typeof string) options = string, string = null;
+  options = options || {};
+
+  if (&#x27;string&#x27; != typeof string) return plugin(options);
+
+  return Rework(string, options)
+    .use(plugin(options))
+    .toString(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.myth.toString" id="apidoc.element.myth.toString">
+        function <span class="apidocSignatureSpan">myth.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var myth = require(&#x27;myth&#x27;);
+var rework = require(&#x27;rework&#x27;);
+var fs = require(&#x27;fs&#x27;);
+
+var css = fs.readFileSync(&#x27;index.css&#x27;, &#x27;utf8&#x27;);
+var converted = rework(css)
+  .use(myth())
+  .<span class="apidocCodeKeywordSpan">toString</span>();
+
+fs.writeFileSync(&#x27;converted.css&#x27;, converted);
+```
+
+Available options:
+
+| Key         | Type      | Description
+...</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.myth.features" id="apidoc.module.myth.features">module myth.features</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.myth.features.calc" id="apidoc.element.myth.features.calc">
+        function <span class="apidocSignatureSpan">myth.features.</span>calc
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">calc = function (options){
+  return calc;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.myth.features.color" id="apidoc.element.myth.features.color">
+        function <span class="apidocSignatureSpan">myth.features.</span>color
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">color = function (options){
+  return color;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.myth.features.customMedia" id="apidoc.element.myth.features.customMedia">
+        function <span class="apidocSignatureSpan">myth.features.</span>customMedia
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">customMedia = function (options){
+  return customMedia;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.myth.features.fontVariant" id="apidoc.element.myth.features.fontVariant">
+        function <span class="apidocSignatureSpan">myth.features.</span>fontVariant
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">fontVariant = function (options){
+  return fontVariant;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.myth.features.hexAlpha" id="apidoc.element.myth.features.hexAlpha">
+        function <span class="apidocSignatureSpan">myth.features.</span>hexAlpha
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">hexAlpha = function (options){
+  return hexAlpha;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.myth.features.import" id="apidoc.element.myth.features.import">
+        function <span class="apidocSignatureSpan">myth.features.</span>import
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">import = function (options){
+  return &#x27;undefined&#x27; == typeof window &#x26;&#x26; options.source
+    ? importer()
+    : function(){};
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.myth.features.prefixes" id="apidoc.element.myth.features.prefixes">
+        function <span class="apidocSignatureSpan">myth.features.</span>prefixes
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">prefixes = function (options){
+  var opts = clone(options);
+  var src = options.source;
+  var prefixes = autoprefixer({ browsers: options.browsers });
+  var processor = postcss(prefixes);
+
+  return function(stylesheet, rework){
+    var str = rework.toString(options);
+    var css = processor.process(str, { from: src, to: src }).css;
+    // we don&#x27;t need source mapping the second time reparsing
+    delete opts.source;
+    rework.obj = Rework(css, opts).obj;
+  };
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+  })()).sort(function(a, b) {
+    return b.length - a.length;
+  });
+};
+
+Browsers.withPrefix = function(value) {
+  if (!this.prefixesRegexp) {
+    this.prefixesRegexp = RegExp(&#x22;&#x22; + (this.<span class="apidocCodeKeywordSpan">prefixes</span>().join(&#x27;|&#x27;)));
+  }
+  return this.prefixesRegexp.test(value);
+};
+
+function Browsers(data1, requirements, options) {
+  this.data = data1;
+  this.options = options;
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.myth.features.rebeccapurple" id="apidoc.element.myth.features.rebeccapurple">
+        function <span class="apidocSignatureSpan">myth.features.</span>rebeccapurple
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">rebeccapurple = function (options){
+  return rebeccapurple;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.myth.features.variables" id="apidoc.element.myth.features.variables">
+        function <span class="apidocSignatureSpan">myth.features.</span>variables
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">variables = function (options){
+  return variables({
+    map: options.variables,
+    preserve: options.preserve
+  });
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.myth.myth" id="apidoc.module.myth.myth">module myth.myth</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.myth.myth.myth" id="apidoc.element.myth.myth.myth">
+        function <span class="apidocSignatureSpan">myth.</span>myth
+        <span class="apidocSignatureSpan">(string, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function myth(string, options){
+  if (&#x27;object&#x27; == typeof string) options = string, string = null;
+  options = options || {};
+
+  if (&#x27;string&#x27; != typeof string) return plugin(options);
+
+  return Rework(string, options)
+    .use(plugin(options))
+    .toString(options);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.myth.toString" id="apidoc.module.myth.toString">module myth.toString</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.myth.toString.toString" id="apidoc.element.myth.toString.toString">
+        function <span class="apidocSignatureSpan">myth.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var myth = require(&#x27;myth&#x27;);
+var rework = require(&#x27;rework&#x27;);
+var fs = require(&#x27;fs&#x27;);
+
+var css = fs.readFileSync(&#x27;index.css&#x27;, &#x27;utf8&#x27;);
+var converted = rework(css)
+  .use(myth())
+  .<span class="apidocCodeKeywordSpan">toString</span>();
+
+fs.writeFileSync(&#x27;converted.css&#x27;, converted);
+```
+
+Available options:
+
+| Key         | Type      | Description
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
