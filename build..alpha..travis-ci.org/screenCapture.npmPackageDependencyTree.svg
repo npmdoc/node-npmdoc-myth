@@ -7,7 +7,7 @@
 <tspan x="10" y="74">└─┬ myth@1.5.0 </tspan>
 <tspan x="10" y="90">  ├─┬ autoprefixer-core@5.2.1 </tspan>
 <tspan x="10" y="106">  │ ├── browserslist@0.4.0 </tspan>
-<tspan x="10" y="122">  │ ├── caniuse-db@1.0.30000655 </tspan>
+<tspan x="10" y="122">  │ ├── caniuse-db@1.0.30000660 </tspan>
 <tspan x="10" y="138">  │ └── num2fraction@1.2.2 </tspan>
 <tspan x="10" y="154">  ├─┬ clone-component@0.2.2 </tspan>
 <tspan x="10" y="170">  │ └── component-type@1.2.1 </tspan>

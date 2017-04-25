@@ -72,16 +72,13 @@
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.myth.toString">
-            function <span class="apidocSignatureSpan">myth.</span>toString
-            <span class="apidocSignatureSpan">()</span>
-            </a>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">myth.</span>features</span>
 
         </li>
 
         <li>
 
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">myth.</span>features</span>
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">myth.</span>logger</span>
 
         </li>
 
@@ -172,32 +169,31 @@
 
     </ol></li>
 
-    <li class="apidocModuleLi"><a href="#apidoc.module.myth.myth">module myth.myth</a><ol>
+    <li class="apidocModuleLi"><a href="#apidoc.module.myth.logger">module myth.logger</a><ol>
 
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.myth.myth.myth">
-            function <span class="apidocSignatureSpan">myth.</span>myth
-            <span class="apidocSignatureSpan">(string, options)</span>
+            <a class="apidocElementLiA" href="#apidoc.element.myth.logger.fatal">
+            function <span class="apidocSignatureSpan">myth.logger.</span>fatal
+            <span class="apidocSignatureSpan">(type, message)</span>
             </a>
 
         </li>
 
         <li>
 
-            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">myth.myth.</span>features</span>
+            <a class="apidocElementLiA" href="#apidoc.element.myth.logger.log">
+            function <span class="apidocSignatureSpan">myth.logger.</span>log
+            <span class="apidocSignatureSpan">(type, message)</span>
+            </a>
 
         </li>
 
-    </ol></li>
-
-    <li class="apidocModuleLi"><a href="#apidoc.module.myth.toString">module myth.toString</a><ol>
-
         <li>
 
-            <a class="apidocElementLiA" href="#apidoc.element.myth.toString.toString">
-            function <span class="apidocSignatureSpan">myth.</span>toString
-            <span class="apidocSignatureSpan">()</span>
+            <a class="apidocElementLiA" href="#apidoc.element.myth.logger.throw">
+            function <span class="apidocSignatureSpan">myth.logger.</span>throw
+            <span class="apidocSignatureSpan">(err)</span>
             </a>
 
         </li>
@@ -231,35 +227,6 @@
     </ul>
 
 
-
-    <h2>
-        <a href="#apidoc.element.myth.toString" id="apidoc.element.myth.toString">
-        function <span class="apidocSignatureSpan">myth.</span>toString
-        <span class="apidocSignatureSpan">()</span>
-        </a>
-    </h2>
-    <ul>
-    <li>description and source-code<pre class="apidocCodePre">toString = function () {
-    return text;
-}</pre></li>
-    <li>example usage<pre class="apidocCodePre">...
-var myth = require(&#x27;myth&#x27;);
-var rework = require(&#x27;rework&#x27;);
-var fs = require(&#x27;fs&#x27;);
-
-var css = fs.readFileSync(&#x27;index.css&#x27;, &#x27;utf8&#x27;);
-var converted = rework(css)
-  .use(myth())
-  .<span class="apidocCodeKeywordSpan">toString</span>();
-
-fs.writeFileSync(&#x27;converted.css&#x27;, converted);
-```
-
-Available options:
-
-| Key         | Type      | Description
-...</pre></li>
-    </ul>
 
 
 
@@ -439,62 +406,130 @@ function Browsers(data1, requirements, options) {
 </div>
 
 <div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.myth.myth" id="apidoc.module.myth.myth">module myth.myth</a></h1>
+<h1><a href="#apidoc.module.myth.logger" id="apidoc.module.myth.logger">module myth.logger</a></h1>
 
 
     <h2>
-        <a href="#apidoc.element.myth.myth.myth" id="apidoc.element.myth.myth.myth">
-        function <span class="apidocSignatureSpan">myth.</span>myth
-        <span class="apidocSignatureSpan">(string, options)</span>
+        <a href="#apidoc.element.myth.logger.fatal" id="apidoc.element.myth.logger.fatal">
+        function <span class="apidocSignatureSpan">myth.logger.</span>fatal
+        <span class="apidocSignatureSpan">(type, message)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function myth(string, options){
-  if (&#x27;object&#x27; == typeof string) options = string, string = null;
-  options = options || {};
-
-  if (&#x27;string&#x27; != typeof string) return plugin(options);
-
-  return Rework(string, options)
-    .use(plugin(options))
-    .toString(options);
+    <li>description and source-code<pre class="apidocCodePre">fatal = function (type, message){
+  if (padded) console.log();
+  padding();
+  error(type, message, &#x27;red&#x27;);
+  process.exit(1);
 }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var regen = program.watch &#x26;&#x26; input &#x26;&#x26; output;
+var ignore = program.ignoreErrors;
+
+/**
+ * Exists?
+ */
+
+if (input &#x26;&#x26; !exists(input)) logger.<span class="apidocCodeKeywordSpan">fatal</span>(&#x27;not found&#x27;, input);
+
+/**
+ * Run.
+ */
+
+run();
+...</pre></li>
     </ul>
 
 
 
-
-</div>
-
-<div class="apidocSectionDiv">
-<h1><a href="#apidoc.module.myth.toString" id="apidoc.module.myth.toString">module myth.toString</a></h1>
-
-
     <h2>
-        <a href="#apidoc.element.myth.toString.toString" id="apidoc.element.myth.toString.toString">
-        function <span class="apidocSignatureSpan">myth.</span>toString
-        <span class="apidocSignatureSpan">()</span>
+        <a href="#apidoc.element.myth.logger.log" id="apidoc.element.myth.logger.log">
+        function <span class="apidocSignatureSpan">myth.logger.</span>log
+        <span class="apidocSignatureSpan">(type, message)</span>
         </a>
     </h2>
     <ul>
-    <li>description and source-code<pre class="apidocCodePre">function toString() { [native code] }</pre></li>
+    <li>description and source-code<pre class="apidocCodePre">log = function (type, message){
+  padding();
+  log(type, message);
+}</pre></li>
     <li>example usage<pre class="apidocCodePre">...
-var myth = require(&#x27;myth&#x27;);
-var rework = require(&#x27;rework&#x27;);
-var fs = require(&#x27;fs&#x27;);
+  }
+  return newBuf
+}
+}
 
-var css = fs.readFileSync(&#x27;index.css&#x27;, &#x27;utf8&#x27;);
-var converted = rework(css)
-  .use(myth())
-  .<span class="apidocCodeKeywordSpan">toString</span>();
+// `get` will be removed in Node 0.13+
+Buffer.prototype.get = function (offset) {
+console.<span class="apidocCodeKeywordSpan">log</span>(&#x27;.get() is deprecated. Access using array indexes instead.&#x27;)
+return this.readUInt8(offset)
+}
 
-fs.writeFileSync(&#x27;converted.css&#x27;, converted);
-```
+// `set` will be removed in Node 0.13+
+Buffer.prototype.set = function (v, offset) {
+console.log(&#x27;.set() is deprecated. Access using array indexes instead.&#x27;)
+return this.writeUInt8(v, offset)
+...</pre></li>
+    </ul>
 
-Available options:
 
-| Key         | Type      | Description
+
+    <h2>
+        <a href="#apidoc.element.myth.logger.throw" id="apidoc.element.myth.logger.throw">
+        function <span class="apidocSignatureSpan">myth.logger.</span>throw
+        <span class="apidocSignatureSpan">(err)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">throw = function (err){
+  if (padded) console.log();
+  padding();
+
+  // node errors (or faulty plugins)
+  if (!err.position) {
+    error(&#x27;error&#x27;, err.toString(), &#x27;red&#x27;, &#x27;red&#x27;);
+    err.stack.split(&#x27;\n&#x27;).slice(1).forEach(function(line){
+      error(&#x27;&#x27;, line.slice(2));
+    });
+  }
+
+  // rework plugin errors
+  else {
+    var pos = err.position;
+    var start = pos.start;
+    var end = pos.end;
+    var lines = err.css.split(&#x27;\n&#x27;);
+
+    error(&#x27;error&#x27;, err.toString(), &#x27;red&#x27;, &#x27;red&#x27;);
+    error(&#x27;&#x27;, &#x27;  at &#x27; + pos.source + &#x27;:&#x27; + start.line + &#x27;:&#x27; + start.column);
+    error();
+
+    for (var i = start.line - 3; i &#x3c; end.line + 2; i++) {
+      var line = lines[i];
+      if (line === undefined) continue;
+      var color = i == start.line - 1 ? &#x27;red&#x27; : &#x27;grey&#x27;;
+      error((i + 1).toString(), &#x27;  &#x27; + line, color, color);
+    }
+  }
+
+  process.exit(1);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+/**
+ * Run for the given input and output.
+ */
+
+function run(){
+  read(input, function(err, buffer){
+if (err) logger.<span class="apidocCodeKeywordSpan">throw</span>(err);
+var css = buffer.toString();
+
+try {
+  css = myth(css, {
+    compress: program.compress,
+    sourcemap: program.sourcemap,
+    features: program,
 ...</pre></li>
     </ul>
 
