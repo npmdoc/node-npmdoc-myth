@@ -1,6 +1,7 @@
 # npmdoc-myth
 
-api documentation for  [myth (v1.5.0)](https://github.com/segmentio/myth)  [![npm package](https://img.shields.io/npm/v/npmdoc-myth.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-myth) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-myth.svg)](https://travis-ci.org/npmdoc/node-npmdoc-myth)
+#### basic api documentation for  [myth (v1.5.0)](https://github.com/segmentio/myth)  [![npm package](https://img.shields.io/npm/v/npmdoc-myth.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-myth) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-myth.svg)](https://travis-ci.org/npmdoc/node-npmdoc-myth)
+
 #### A CSS preprocessor that acts like a polyfill for future versions of the spec.
 
 [![NPM](https://nodei.co/npm/myth.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/myth)
